@@ -1,0 +1,10 @@
+/*footer*/
+.footer{
+    background-color: $color-black;
+    &_img{
+        margin:auto;
+        display:block;
+        width:10%;
+        padding: 5% 0%;
+    }
+}

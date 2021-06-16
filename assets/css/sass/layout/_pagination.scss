@@ -1,0 +1,17 @@
+/*paginación*/
+.pagination{
+    background-color: $color-platinum;
+    &_nav{
+        margin: auto;
+    }
+    .page-link{
+        color: $color-nickel;
+    }
+}
+
+.page-item{
+    &.active .page-link{
+        background-color: $color-nickel !important;
+        border-color: $color-nickel !important;
+    }
+}

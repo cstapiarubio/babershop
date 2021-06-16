@@ -1,0 +1,97 @@
+%padding{
+    padding:5%;
+}
+
+/*header*/
+
+.header{
+    &_bloque{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        height:100vh;
+        background-image: url('../img/post-image.jpg');
+        display:table;
+        width:100%;
+    }   
+    &_h1{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: $fontsize-xxlarge;
+        font-family: $font-playfair;
+        color: $color-white;
+        font-weight: $font-bold;
+        text-align: center;
+    }
+}
+
+/*section noticias*/
+
+.news{
+    @extend %padding;
+    color: $color-nickel;
+    font-family: $font-roboto;
+    &_h5{
+        font-size: $fontsize-medium;
+        font-weight: $font-regular;
+    }
+    &_parrafo{
+        padding-top: 3%;
+        font-size: $fontsize-medium;
+        font-weight: $font-light;
+    }
+}
+
+//section autor
+
+.autor{
+    @extend %padding;
+    display:table;
+    &_bloque{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &_img{
+        width:75%;
+    }
+    &_enlace{
+        color:$color-spanishpink;
+        display:block;
+        width:100%;
+        font-family:$font-roboto;
+        font-size: $fontsize-large;
+    }
+    &_enlace:hover{
+        color:$color-nickel;
+    }
+    &_enlace:active{
+        color: $color-platinum;
+    }
+    &_h3{
+        font-family:$font-playfair;
+        font-weight: $font-bold;
+        font-size: $fontsize-xlarge;
+    }
+    &_parrafo{
+        font-family:$font-playfair;
+        font-weight: $font-regular;
+        font-size: $fontsize-medium;
+        color: $color-nickel;
+    }
+}
+
+/*mediaqueries*/
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    #autor_parrafo{
+        display:none !important;
+    }
+    .autor_bloque{
+        text-align: center !important;
+        margin:auto !important;
+    }
+    .autor_img{
+        width:30%;
+    }
+ }

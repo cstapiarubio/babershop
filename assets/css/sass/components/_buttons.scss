@@ -1,0 +1,19 @@
+/*botones*/
+.news_button{
+    background-color: $color-nickel !important;
+    border-radius: 40px;
+}
+
+.news_button:last-child{
+    margin-left: 2%;
+}
+
+.btn:hover{
+    background-color: $color-lightgray !important;
+    border-color: $color-lightgray !important;
+}
+
+.btn:focus{
+    background-color: $color-nickel !important;
+    border-color: $color-lightgray !important;
+}

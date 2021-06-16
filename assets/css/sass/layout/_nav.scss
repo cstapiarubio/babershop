@@ -1,0 +1,22 @@
+/*nav*/
+.nav{
+    font-family: $font-roboto;
+    background-color: $color-black;
+    height:15vh;
+    &_lista_enlace{
+        color:$color-white !important;
+    }
+    &_span{
+        color: $color-ruddypink !important;
+    }
+    &_bloque{
+        margin: 0% 6%;
+    }
+    &_logo{
+        width:30%;
+    }
+}
+
+#icono{
+    background-color:$color-platinum !important;
+}
